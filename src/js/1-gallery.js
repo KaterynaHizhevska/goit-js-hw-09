@@ -85,6 +85,13 @@ const createGallery = images.map(({ preview, original, description }) => {
 }).join('');
 
 galleryContainer.innerHTML = createGallery;
+
+let gallery = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt', 
+  captionDelay: 250, 
+});
+
+
 // galleryContainer.addEventListener('click', event => {
 //     event.preventDefault();
     
