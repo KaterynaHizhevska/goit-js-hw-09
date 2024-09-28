@@ -85,8 +85,8 @@ const createGallery = images.map(({ preview, original, description }) => {
 }).join('');
 
 galleryContainer.innerHTML = createGallery;
-galleryContainer.addEventListener('click', event => {
-    event.preventDefault();
+// galleryContainer.addEventListener('click', event => {
+//     event.preventDefault();
     
-    const lightbox = new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: 250 });
-});
+//     const lightbox = new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: 250 });
+// });
